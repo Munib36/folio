@@ -56,11 +56,11 @@
     opacity: 1;
 }
 
-/*! REAL NOW */
+/*! background image */
 
 .background-image{
-    /* background-image: url("./assets/background.jpg"); */
-    background-color: var(--main-color);
+    background-image: url("./assets/background.jpg");
+    /* background-color: var(--main-color); */
 
     position: absolute;
     top: 0;
@@ -70,6 +70,6 @@
 
     z-index: -1;
 
-    background-fit: cover;
+    background-size: cover;
     background-position: center;
 }
