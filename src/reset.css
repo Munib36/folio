@@ -10,6 +10,7 @@
   list-style: none;
   font-family: 'Bebas Neue', sans-serif;
   letter-spacing: 0.2rem ;
+  box-sizing: border-box;
 
   color: var(--color)
 }

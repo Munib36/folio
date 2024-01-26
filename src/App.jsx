@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 function App() {
   return (
-    <h1>hi</h1>
+    <h1></h1>
   )
 }
 
