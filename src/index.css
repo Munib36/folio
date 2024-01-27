@@ -8,7 +8,7 @@
     border-right: 45vw solid transparent;
     
 
-    border-bottom: 100px solid var(--main-color);
+    border-bottom: 100px solid var(--primary-color);
 
     position: inherit;
     top: -100px;
@@ -25,7 +25,7 @@
 
     border-left: 0 solid transparent;
     border-right: 50vw solid transparent;
-    border-top: 100px solid var(--main-color);
+    border-top: 100px solid var(--primary-color);
 }
 
 #bottomtriangle2{
@@ -38,7 +38,7 @@
 
     border-left: 50vw solid transparent;
     border-right: 0px solid transparent;
-    border-top: 100px solid var(--main-color);
+    border-top: 100px solid var(--primary-color);
 }
 #circle{
     position: inherit;
@@ -57,7 +57,9 @@
 }
 
 /*! background image */
-
+body{
+    overflow-x: hidden;
+}
 .background-image{
     background-image: url("./assets/background.jpg");
     /* background-color: var(--main-color); */
