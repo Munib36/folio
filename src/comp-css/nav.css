@@ -4,7 +4,7 @@
 .nav{
     background-color: transparent;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 1000px;
     height: 50px;
@@ -41,7 +41,7 @@
   color: var(--lighter-primary-color);
 }
 .nav__title:hover::after{
-  width: 80%;
+  width: calc(80% - 3px);
 }
 
 
@@ -59,7 +59,7 @@
   color: var(--lighter-primary-color);
 }
 .nav__list-container li:hover::after{
-  width: 80%;
+  width: calc(80% - 3px);
 }
 
 /*! SIDEBAR */
@@ -85,7 +85,16 @@
     margin-left: 13px;
     color: var(--color)
 }
+
+#blur{
+  filter: blur(0px);
+  transition: all 500ms;
+  
+}
 @media (max-width: 650px) {
+    .nav{
+      background: linear-gradient(to bottom, rgba(30, 30, 30, 0.5),rgba(30, 30, 30, 0.3), transparent);
+    }
     .checkbtn{
         display: inline-block;
     }
@@ -102,7 +111,7 @@
     }
 }
 
-@media (max-width: 858px){
+@media (max-width: 650px){
   .checkbtn{
 
     display: block;
@@ -114,11 +123,13 @@
     height: 100vh;
     top: 2  0px;
     background-color: var(--thirdary-color);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    /* background-image: linear-gradient(to bottom, var(--thirdary-color), transparent); */
     left: 100%;
     text-align: center;
     transition: all .2s;
     display: inline;
-    z-index: 2;
+    z-index: 1;
 
     padding-top: 10%;
   }
@@ -136,5 +147,9 @@
   }
   #check:checked ~ .nav__list-container{
     left: 40%;
+  }
+  #check:checked ~ .blur{
+    
+  filter: blur(30px);
   }
 }

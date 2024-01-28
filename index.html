@@ -15,13 +15,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   </head>
   <body>
-    <main class="background-image"></main>
-
-
+    
+    <main class="background-image" id="blur"></main>
     <nav class="nav">
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
-        <i class="fa fa-bars"></i>
+        <i for="check" class="fa fa-bars"></i>
       </label>
       <a href="#" class="nav__title">Munib</a>
       <ul class="nav__list-container">
@@ -29,13 +28,24 @@
         <li><a class="nav__list--a" href="#">Projects</a></li>
         <li><a class="nav__list--a" href="#">Contacts</a></li>
       </ul>
-
     </nav>
+
+
+    <div class="page" id="blur">
+      <div id="circle">
+        <i class="fa fa-angle-down" style="color: #c8293f;"></i>
+        
+      </div>
+      <div id="triangle"></div>
+
+    </div>
+
 
 
 
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script src="./src/circle.js"></script>
   </body>
 </html>
 

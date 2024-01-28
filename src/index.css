@@ -1,76 +1,23 @@
 @import './constants.css';
 
-#triangle{
-    width: 0;
-    height: 0;
 
-    border-left: 45vw solid transparent;
-    border-right: 45vw solid transparent;
-    
-
-    border-bottom: 100px solid var(--primary-color);
-
-    position: inherit;
-    top: -100px;
-}
-
-
-
-#bottomtriangle1{
-    position: absolute;
-    bottom: -100px;
-    left: 0px;
-    
-    background-color: transparent;
-
-    border-left: 0 solid transparent;
-    border-right: 50vw solid transparent;
-    border-top: 100px solid var(--primary-color);
-}
-
-#bottomtriangle2{
-    position: absolute;
-    bottom: -100px;
-    right: 0px;
-    
-    
-    background-color: transparent;
-
-    border-left: 50vw solid transparent;
-    border-right: 0px solid transparent;
-    border-top: 100px solid var(--primary-color);
-}
-#circle{
-    position: inherit;
-
-
-    transform: translateX(-50%);
-    top: -190px;
-    left: 50%;
-    width: 50px;
-    height: 50px;
-    aspect-ratio: 1/1;
-
-    fill: var(--main-color);
-
-    opacity: 1;
-}
 
 /*! background image */
 body{
     overflow-x: hidden;
+    background-color: black;
 }
 .background-image{
     background-image: url("./assets/background.jpg");
-    /* background-color: var(--main-color); */
+    /* background-color: var(--primary-color); */
 
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
 
-    z-index: -1;
+    z-index: -3;
 
     background-size: cover;
     background-position: center;
