@@ -4,7 +4,7 @@
 .nav{
     background-color: transparent;
 
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 1000px;
     height: 50px;
@@ -27,39 +27,25 @@
     display: none;
 }
 /*! HOVER EFFECTS */
-.nav__title::after{
+.hover::after{
   content: "";
+  position: relative;
+  left: 0;
+	right: 0;
   height: 3px;
   width: 0%;
+  transform: translateX(10%);    
   background-color: var(--lighter-primary-color);
   display: block;
   transition: all 0.5s;
 
-  margin-inline: 10%;
 }
-.nav__title:hover{
+.hover:hover{
   color: var(--lighter-primary-color);
 }
-.nav__title:hover::after{
+.hover:hover::after{
   width: calc(80% - 3px);
-}
 
-
-.nav__list-container li::after{
-  content: "";
-  height: 3px;
-  width: 0%;
-  background-color: var(--lighter-primary-color);
-  display: block;
-  transition: all 0.5s;
-
-  margin-inline: 10%;
-}
-.nav__list--a:hover{
-  color: var(--lighter-primary-color);
-}
-.nav__list-container li:hover::after{
-  width: calc(80% - 3px);
 }
 
 /*! SIDEBAR */
@@ -94,6 +80,7 @@
 @media (max-width: 650px) {
     .nav{
       background: linear-gradient(to bottom, rgba(30, 30, 30, 0.5),rgba(30, 30, 30, 0.3), transparent);
+      position: fixed;
     }
     .checkbtn{
         display: inline-block;
@@ -112,6 +99,7 @@
 }
 
 @media (max-width: 650px){
+
   .checkbtn{
 
     display: block;
