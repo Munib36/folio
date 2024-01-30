@@ -29,6 +29,7 @@ function contact() {
 
 
 
+
 let blur = document.querySelectorAll("#blur");
 let btn = document.getElementById("check")
 
@@ -36,10 +37,33 @@ btn.addEventListener("change", ()=>{
     if (btn.checked) {
         blur.forEach(element => {
             element.style.filter = "blur(3px)"
-          });
+        });
       } else {
         blur.forEach(element => {
             element.style.filter = "blur(0px)"
-          });
+        });
       }
+})
+
+
+
+
+
+// this is weird i know but it removes the navbar when its too low
+
+window.addEventListener("scroll",()=>{
+    y = window.scrollY;
+    if(y > window.innerHeight){ // i put window.innerHeight for responsiveness
+        document.getElementById("nav").style.display = "none"
+        blur.forEach(element => { //this blur because its kinda indirect but i cant do anything abt it
+            element.style.filter = "blur(0px)"
+        });
+    }else{
+        document.getElementById("nav").style.display = "block"
+        if(btn.checked){ // same here but it checks first if its checked
+            blur.forEach(element => { 
+                element.style.filter = "blur(3px)"
+            });
+        }
+    }
 })

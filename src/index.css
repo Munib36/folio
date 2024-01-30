@@ -6,6 +6,7 @@
 body{
     overflow-x: hidden;
     background-color: black;
+    margin-bottom: 3000px;
 }
 .background-image{
     background-image: url("./assets/background.jpg");

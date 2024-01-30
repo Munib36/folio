@@ -1,6 +1,8 @@
 @import "../constants.css";
 :root{
     --triangle-size-value: calc(15vw + 15px);
+
+    --page-background-color: var(--primary-color)
 }
 
 .page{
@@ -10,9 +12,11 @@
 
     top: calc(100vh + var(--triangle-size-value));
     height: 1000px;
-    background-color: var(--primary-color);
+    background-color: var(--page-background-color);
 
     z-index: -1;
+
+    margin-bottom: 1000px;
     
 }
 
@@ -29,7 +33,7 @@
     border-right: 45vw solid transparent;
     
 
-    border-bottom: var(--triangle-size-value) solid var(--primary-color);
+    border-bottom: var(--triangle-size-value) solid var(--page-background-color);
 
     position: inherit;
     /* top: calc(-15vw + -14px); */
@@ -39,7 +43,7 @@
 
 
 
-#bottomtriangle1{
+#bottom-triangle1{
     position: absolute;
     bottom: -100px;
     left: 0px;
@@ -48,10 +52,10 @@
 
     border-left: 0 solid transparent;
     border-right: 50vw solid transparent;
-    border-top: 100px solid var(--primary-color);
+    border-top: 100px solid var(--page-background-color);
 }
 
-#bottomtriangle2{
+#bottom-triangle2{
     position: absolute;
     bottom: -100px;
     right: 0px;
@@ -61,7 +65,7 @@
 
     border-left: 50vw solid transparent;
     border-right: 0px solid transparent;
-    border-top: 100px solid var(--primary-color);
+    border-top: 100px solid var(--page-background-color);
 }
 #circle{
     position: relative;
