@@ -69,7 +69,8 @@
 .nav__list-container li{
     display: inline-block;
     margin-left: 13px;
-    color: var(--red-text-color)
+    color: var(--red-text-color);
+    
 }
 
 #blur{

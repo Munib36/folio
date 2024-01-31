@@ -12,7 +12,9 @@
   letter-spacing: 0.2rem ;
   box-sizing: border-box;
 
-  color: var(--red-text-color)
+  color: var(--red-text-color);
+
+
 }
 
 /* Prevent font size inflation */
