@@ -36,3 +36,46 @@
     font-size: 18px;
     display: inline;
 }
+
+
+.about__buttons-container{
+    justify-items: center;
+}
+
+.about__buttons--buttons{
+    padding: 4px 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--quadrary-color);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    cursor: pointer;
+    color: var(--light-color);
+    transition: 0.25s;
+    margin-right: 1em;
+    margin-top: 14px;
+}
+.about__buttons--buttons:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em var(--light-color);
+    transform: translateY(-0.25em);
+}
+.about__buttons--buttons:active{
+    transition: 0s;
+    background-color: var(--thirdary-color);
+}
+
+
+@media (max-width: 1000px){
+    .about__hi h1{
+        font-size: 32px;
+    } 
+    .about h1{
+        font-size: 32px;
+    }
+    .about h2{
+        font-size: 20px;
+    }
+    .about h3{
+        font-size: 18px;
+    }
+    
+}
