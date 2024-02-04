@@ -2,7 +2,7 @@
 :root{
     --triangle-size-value: calc(15vw + 15px);
 
-    --page-background-color: var(--primary-color)
+    --page-background-color: var(--quadrary-color)
 }
 
 .page{
