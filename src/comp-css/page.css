@@ -10,7 +10,7 @@
     width: 90%;
     margin-left: 5%;
 
-    top: calc(100vh + var(--triangle-size-value));
+    top: calc(50vh + var(--triangle-size-value));
     height: 1000px;
     background-color: var(--page-background-color);
 
