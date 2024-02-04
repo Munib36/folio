@@ -52,12 +52,12 @@ btn.addEventListener("change", () => {
 })
 
 
-function blur(){
+function blurScreen(){
 	blur.forEach(element => {
 		element.style.filter = "blur(3px)"
 	});
 }
-function unblur(){
+function unblurScreen(){
 	blur.forEach(element => {
 		element.style.filter = "blur(0px)"
 	});
@@ -72,12 +72,13 @@ window.addEventListener("scroll", () => {
 
 	if (YScroll > maxPoint__scrollfunction) { 
 		nav.style.display = "none"
+		unblurScreen();
 	} else if ((YScroll < maxPoint__scrollfunction) && (XWidth > 650)) {
 		nav.style.display = "block"
 	} else {
 		nav.style.display = "block"
 		if (btn.checked) {
-			blur();
+			blurScreen();
 		}
 	}
 })
@@ -86,10 +87,10 @@ window.addEventListener("scroll", () => {
 window.addEventListener("resize", () => {
 	XWidth = window.innerWidth; //* update
 
-	if (XWidth > 650 && btn.checked) {
-		unblur();
-	} else {
-		blur();
+	if (XWidth > 650) {
+		unblurScreen();
+	} else if(btn.checked && YScroll < maxPoint__scrollfunction) {
+		blurScreen();
 	}
 })
 
