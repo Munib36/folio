@@ -1,6 +1,6 @@
 @import "../constants.css";
 :root{
-    --triangle-size-value: calc(15vw + 15px);
+    --triangle-size-value: calc(11vw + 15px);
 
     --page-background-color: var(--quadrary-color)
 }
@@ -29,6 +29,7 @@
     width: 0;
     height: 0;
 
+    /*? 45 because its the half of 90, on each side it adds up to 90 so it lines up */
     border-left: 45vw solid transparent;
     border-right: 45vw solid transparent;
     

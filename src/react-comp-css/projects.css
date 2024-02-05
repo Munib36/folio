@@ -1,0 +1,29 @@
+.project{
+    background-color: green;
+    margin-top: 300px;          /*! PLEASE EDIT THIS LATER   +++++++++++   */
+
+    margin-inline: 18%;
+
+}
+.project * {
+    color: var(--light-color);
+}
+.project p{
+    font-size: 28px;
+}
+
+
+.tempImage{
+    background-color: linear-gradient(to right, red, blue);
+    width: 100%;
+    height: 100%;
+}
+
+
+.project > div{
+    display: flex;
+    gap: max-content;
+}
+.project > div > div{
+    flex: 1;
+}
