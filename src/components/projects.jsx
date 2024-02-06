@@ -1,4 +1,10 @@
-// import image1 from ""
+import React from 'react'
+
+import image1 from "/image1.png";
+import image2 from "/image2.png";
+import image3 from "/image2.png";
+
+
 
 function Github(){
     return(
@@ -18,10 +24,9 @@ function Link(){
 
 function ProjectOne(){
     return(
-        <div>
-            <div>
-                {/* <img src="" alt="" /> */}
-                <div className="tempImage"></div>
+        <div className="project__card">
+            <div className="project__card--image">
+                <img src={image1} alt="" />
             </div>
             <div className="card__text">
                 <span>🏦Personal Project</span>
@@ -45,15 +50,16 @@ function ProjectOne(){
     )
 }
 function ProjectTwo(){
+    
     return(
-        <div>
+        <div className="project__card card2">
             <div className="card__text">
-                <span>🏦Personal Project</span>
+                <span>📸Personal Project</span>
                 <h4>Tenzies Game</h4>
                 <p>Lorem ipsum dolor sit ametam distinctio! Dolores magnam eveniet libero doloremque error commodi sunt voluptatem! Quae quasi assumenda autem debitis modi!</p>
                 <div className="card__text--tools">
                     <p>React</p>
-                    <p>Web Game</p>
+                    <p>API</p>
                     <p>TailwindCSS</p>
                 </div>
                 <div className="card__text--links">
@@ -65,20 +71,21 @@ function ProjectTwo(){
                     </a>
                 </div>
             </div>
-            <div>
-                <div className="tempImage"></div>
+            <div className="project__card--image">
+                <img src={image2} alt="" />
             </div>
         </div>
     )
 }
+
 function ProjectThree(){
     return(
-        <div>
-            <div>
-                <div className="tempImage"></div>
+        <div className="project__card">
+            <div className="project__card--image">
+                <img src={image3} alt="" />
             </div>
             <div className="card__text">
-                <span>🏦Personal Project</span>
+                <span>🎲Personal Project</span>
                 <h4>Tenzies Game</h4>
                 <p>Lorem ipsum dolor sit amet stiae iure magnam distinctio! Dolores magnam eveniet libero doloremque error commodi sunt voluptatem! Quae quasi assumenda autem debitis modi!</p>
                 <div className="card__text--tools">
@@ -100,12 +107,34 @@ function ProjectThree(){
 }
 
 export default function Projects(){
+    let [ width, setWidth ] = React.useState(window.innerWidth)
+    
+    React.useEffect(()=>{
+        console.log('effect ran')
+        function handleResize () {
+            setWidth(window.innerWidth)
+        }
+        
+        window.addEventListener("resize", handleResize)
+
+        return () => {
+            window.removeEventListener("resize", handleResize)
+        }   
+    }, [])
+    
+
+
+
+    
+
     return(
-        <div id="projects" className="project">
+        <div id="projects" className="project"> 
             <p>My Work👨‍💻</p>
-            <ProjectOne />
-            <ProjectTwo />
-            <ProjectThree />
+            <div className="projects__container">
+                <ProjectOne />
+                <ProjectTwo />
+                <ProjectThree />
+            </div>  
         </div>
     )
 }
