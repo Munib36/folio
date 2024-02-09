@@ -85,7 +85,6 @@
 @media (max-width: 1115px) {
     .project{
         width: 100%;
-        overflow-x: scroll;
 
 
         /* background-color: red; */
