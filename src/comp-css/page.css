@@ -7,8 +7,9 @@
 
 .page{
     position: absolute;
-    width: 90%;
+    width: 90vw;
     margin-left: 5%;
+    transition: 0;
 
     top: calc(101vh + var(--triangle-size-value));
     background-color: var(--page-background-color);
