@@ -19,6 +19,9 @@ export default function About(){
         hiddenElements.forEach((el) => observer.observe(el));
     }, [1])
 
+
+    
+
     return(
         <div className="about hidden" id="about">
             <div className="about__hi"><h1>Hi!</h1> <img src={image} /></div>
