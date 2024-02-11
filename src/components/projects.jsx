@@ -24,7 +24,7 @@ function Link(){
 
 function ProjectOne(){
     return(
-        <div className="project__card">
+        <div className="project__card hidden">
             <div className="project__card--image">
                 <img src={image1} alt="" />
             </div>
@@ -52,7 +52,7 @@ function ProjectOne(){
 function ProjectTwo(){
     
     return(
-        <div className="project__card card2">
+        <div className="project__card card2 hidden">
             <div className="card__text">
                 <span>📸Personal Project</span>
                 <h4>Tenzies Game</h4>
@@ -80,7 +80,7 @@ function ProjectTwo(){
 
 function ProjectThree(){
     return(
-        <div className="project__card">
+        <div className="project__card hidden">
             <div className="project__card--image">
                 <img src={image3} alt="" />
             </div>
@@ -108,6 +108,20 @@ function ProjectThree(){
 
 export default function Projects(){
     let [ width, setWidth ] = React.useState(window.innerWidth)
+    React.useEffect(()=>{
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        });
+        const hiddenElements = document.querySelectorAll('.hidden') ;
+        console.log(hiddenElements)
+        hiddenElements.forEach((el) => observer.observe(el));
+    }, [1])
+
+
     
     React.useEffect(()=>{
         console.log('effect ran')
