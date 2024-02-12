@@ -1,0 +1,34 @@
+@import "../constants.css";
+
+.skills__container{
+    margin-inline: 18%;
+
+    display: flex;
+    flex-direction: column;
+}
+.skills__container *{
+    color: var(--light-color)
+}
+
+
+.skills__container--skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    gap: 10px;
+}
+.skills__container--skills > div{
+    background-color: var(--thirdary-color);
+    border-radius: 10px;
+    height: min-content;
+
+    display: flex;
+    align-items: center;
+
+    padding: 10px;
+}
+.skills__container--skills > div > img{
+    width: 20px;
+    aspect-ratio: 1/1;
+}

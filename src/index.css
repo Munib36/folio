@@ -36,3 +36,18 @@ body{
     filter: blur(0px);
     transform: translateX(0%);
 }
+
+
+.hidden-skills{
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: 700ms;
+    filter: blur(5px);
+
+    transform: rotateZ(0deg);
+}
+.show-skills{
+    opacity: 1;
+    filter: blur(0px);
+    transform: rotateZ(90deg);
+}
