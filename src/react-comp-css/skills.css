@@ -2,7 +2,9 @@
 
 .skills__container{
     margin-inline: 18%;
+    margin-top: 200px;
 
+    
     display: flex;
     flex-direction: column;
 }
@@ -27,8 +29,15 @@
     align-items: center;
 
     padding: 10px;
+
+
+    transform: prespective(1000px) rotateX(90deg);
+}
+.skills__container--skils > div:hover{
+    transform: prespective(1000px) rotateX(0deg);
 }
 .skills__container--skills > div > img{
     width: 20px;
     aspect-ratio: 1/1;
+    margin-right; 4px;
 }
