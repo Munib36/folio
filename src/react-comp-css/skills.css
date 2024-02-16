@@ -58,7 +58,9 @@
 
 
 
-
+.project__card--image img{
+    overflow: hidden;
+}
 
 
 
