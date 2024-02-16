@@ -7,7 +7,29 @@ import "./react-comp-css/projects.css"
 import Skills from "./components/skills.jsx"
 import "./react-comp-css/skills.css"
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function App() {
+
+
+
+  
   
   return (
     <>
