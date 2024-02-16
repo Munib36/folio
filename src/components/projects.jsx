@@ -117,7 +117,7 @@ export default function Projects(){
             });
         });
         const hiddenElements = document.querySelectorAll('.hidden') ;
-        console.log(hiddenElements)
+
         hiddenElements.forEach((el) => observer.observe(el));
     }, [1])
 

@@ -19,6 +19,7 @@
     grid-template-rows: 1fr 1fr;
 
     gap: 10px;
+    content: '';
 }
 .skills__container--skills > div{
     background-color: var(--thirdary-color);
@@ -30,14 +31,55 @@
 
     padding: 10px;
 
-
-    transform: prespective(1000px) rotateX(90deg);
+    backface-visibility: hidden;
+    transform: perspective(1000px) rotateX(90deg);
 }
-.skills__container--skils > div:hover{
-    transform: prespective(1000px) rotateX(0deg);
+.flip{
+
+    transition: 1s;
+    animation: flip 1s forwards;
+}
+@keyframes flip{
+    0%{
+
+        transform: perspective(1000px) rotateX(90deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateX(0deg);
+    }
 }
 .skills__container--skills > div > img{
     width: 20px;
     aspect-ratio: 1/1;
-    margin-right; 4px;
+    margin-right: 4px;
 }
+
+
+
+
+
+
+
+
+
+
+
+.card1 {
+    animation-delay: 100ms;
+  }
+  
+  .card2 {
+    animation-delay: 200ms;
+  }
+  
+  .card3 {
+    animation-delay: 300ms;
+  }
+  
+  .card4 {
+    animation-delay: 400ms;
+  }
+  
+  .card5 {
+    animation-delay: 500ms;
+  }
