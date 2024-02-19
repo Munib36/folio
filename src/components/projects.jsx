@@ -124,7 +124,7 @@ export default function Projects(){
 
     
     React.useEffect(()=>{
-        console.log('effect ran')
+        // console.log('effect ran')
         function handleResize () {
             setWidth(window.innerWidth)
         }
@@ -151,7 +151,7 @@ export default function Projects(){
         function stars(El){
             let starBox = document.querySelector(El);
                 
-            console.log('effect ran')
+            // console.log('effect ran')
             let x1=0, y1=0;
             starBox.client
             const 
@@ -186,7 +186,7 @@ export default function Projects(){
                 str.style.fontSize = selRand(fsize);
 
                 document.body.appendChild(str)
-                console.log(rand(0, 3));
+                // console.log(rand(0, 3));
                 const fs = 10 + 5 * parseFloat(getComputedStyle(str).fontSize);
                 //console.log(vh, y, fs);
                 //console.log((y+fs)>vh?vh-y:fs);
