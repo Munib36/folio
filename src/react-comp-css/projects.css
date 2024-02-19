@@ -5,7 +5,7 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 1000px;
+    width: 1200px;
     padding-inline: 5%;
 
 }
@@ -99,7 +99,7 @@
     .project__card{
         flex-direction: column;
     }
-    .card2{
+    .project__card2{
         flex-direction: column-reverse;
     }
 }

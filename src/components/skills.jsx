@@ -32,11 +32,11 @@ export default function Skills() {
                 <h1>Tech Stack</h1>
             </div>
             <div className='skills__container--skills'>
-                <div className='card card1'><img src={wrench} />Web Development</div>
-                <div className='card card2'><img src={css} />CSS</div>
-                <div className='card card3'><img src={JS} />Javascript</div>
-                <div className='card card4'><img src={react} />React</div>
-                <div className='card card5'><img src={git} />Git</div>
+                <div className='card card1'><img src={wrench} /><p>Web Development</p></div>
+                <div className='card card2'><img src={css} /><p>CSS</p></div>
+                <div className='card card3'><img src={JS} /><p>Javascript</p></div>
+                <div className='card card4'><img src={react} /><p>React</p></div>
+                <div className='card card5'><img src={git} /><p>Git</p></div>
             </div>
         </div>
     )

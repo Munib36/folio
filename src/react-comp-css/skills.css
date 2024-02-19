@@ -1,7 +1,7 @@
 @import "../constants.css";
 
 .skills__container{
-    margin-inline: 18%;
+    margin-inline: 20%;
     margin-top: 200px;
 
     
@@ -85,3 +85,19 @@
   .card5 {
     animation-delay: 500ms;
   }
+
+
+  
+@media (max-width: 1115px) {
+    .skills__container--skills{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+  
+@media (max-width: 709px) {
+    .skills__container--skills{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}

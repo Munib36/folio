@@ -52,7 +52,7 @@ function ProjectOne(){
 function ProjectTwo(){
     
     return(
-        <div className="project__card card2 hidden">
+        <div className="project__card project__card2 hidden">
             <div className="card__text">
                 <span>📸Personal Project</span>
                 <h4>Tenzies Game</h4>
@@ -229,7 +229,7 @@ export default function Projects(){
 
         stars(".project__card--image-img1")
         stars(".project__card--image-img2")
-        stars(".project__card--image-img3")
+        stars(".project__card--image-img3") 
 
     }, [])
 
