@@ -38,7 +38,7 @@
 
     position: inherit;
     /* top: calc(-15vw + -14px); */
-    top: calc((-1 * var(--triangle-size-value)) + 0.05vh);
+    top: calc((-1 * var(--triangle-size-value)) + 0.1vh);
     /* weird i know but its good, as u can see it negates it and just 1 px bc there is a weird gap  */
 }   
 
