@@ -27,9 +27,12 @@ export default function About(){
             <h2>Let's keep it simple and A W E S O M E!</h2>
             <h3>Self-taught Programmer & Junior Front-End Developer with a passion for bikes.</h3>
             <div className="about__buttons-container">
-                <button className="about__buttons--buttons">LinkedIn</button>
-                <button className="about__buttons--buttons">Github</button>
-                <button className="about__buttons--buttons">Mail</button>
+                
+                
+                
+                <a><button className="about__buttons--buttons">LinkedIn</button></a>
+                <a><button className="about__buttons--buttons">Github</button></a>
+                <a><button className="about__buttons--buttons">Mail</button></a>
             </div>
         </div>
     )
