@@ -30,9 +30,9 @@ export default function About(){
                 
                 
                 
-                <a><button className="about__buttons--buttons">LinkedIn</button></a>
-                <a><button className="about__buttons--buttons">Github</button></a>
-                <a><button className="about__buttons--buttons">Mail</button></a>
+                <a href="https://ca.linkedin.com/in/munib-sondak-67a380288"><button className="about__buttons--buttons">LinkedIn</button></a>
+                <a href="https://github.com/Munib36"><button className="about__buttons--buttons">Github</button></a>
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=business.munib@gmail.com"><button className="about__buttons--buttons">Mail</button></a>
             </div>
         </div>
     )
