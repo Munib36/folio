@@ -9,14 +9,19 @@
 
 
     margin-top: 200px;
-
-    margin-inline: 16%;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
     color: var(--light-color);
 }
 
 .who__text{
     padding-right: 90px;
     color: currentColor;
+
 }
 .who__text h3{
     font-size: 28px;
@@ -31,4 +36,20 @@
 
 .who__image img{
     border-radius: 10px;
+    
+}
+
+  
+@media (max-width: 1115px) {
+    .who{
+        display: block;
+        width: 80%;
+    }
+    .who__text{
+        padding-right: 0px;
+    }
+    .who__image img{
+        width: 50%;
+        margin-top: 60px;
+    }
 }
