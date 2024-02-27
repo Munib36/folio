@@ -49,7 +49,6 @@
         padding-right: 0px;
     }
     .who__image img{
-        width: 50%;
-        margin-top: 60px;
+        display: none;
     }
 }
