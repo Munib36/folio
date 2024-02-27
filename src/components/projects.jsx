@@ -243,7 +243,7 @@ export default function Projects(){
     return(
         <div id="projects" className="project"> 
             <p>My Work👨‍💻</p>
-            <div className="projects__container">
+            <div className="projects__container" id="style-1">
                 <ProjectOne />
                 <ProjectTwo />
                 <ProjectThree />
