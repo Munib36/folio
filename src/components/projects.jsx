@@ -31,17 +31,17 @@ function ProjectOne(){
             <div className="card__text">
                 <span>🏦Personal Project</span>
                 <h4>Tenzies Game</h4>
-                <p>Tenzies made with</p>
+                <p>Fully working Tenzies game made with React.JS with a focus on hooks, counts best scores and time, clean and responsive design.</p>
                 <div className="card__text--tools">
                     <p>React</p>
                     <p>Web Game</p>
                     <p>TailwindCSS</p>
                 </div>
                 <div className="card__text--links">
-                    <a href="">
+                    <a href="https://github.com/Munib36/react-practice">
                         <Github />
                     </a>
-                    <a href="">
+                    <a href="https://scrimba-prac.netlify.app/">
                         <Link />
                     </a>
                 </div>
@@ -55,18 +55,18 @@ function ProjectTwo(){
         <div className="project__card project__card2 hidden">
             <div className="card__text">
                 <span>📸Personal Project</span>
-                <h4>Tenzies Game</h4>
-                <p>Lorem ipsum dolor sit ametam distinctio! Dolores magnam eveniet libero doloremque error commodi sunt voluptatem! Quae quasi assumenda autem debitis modi!</p>
+                <h4>travel journal</h4>
+                <p>My personal travel journal of places ive been in and enjoyed my time in. This website exercises React.JS API with responsive design.</p>
                 <div className="card__text--tools">
                     <p>React</p>
                     <p>API</p>
-                    <p>TailwindCSS</p>
+                    <p>Responsive</p>
                 </div>
                 <div className="card__text--links">
-                    <a href="">
+                    <a href="https://github.com/Munib36/mytraveljournal">
                         <Github />
                     </a>
-                    <a href="">
+                    <a href="https://munibjournal.netlify.app/">
                         <Link />
                     </a>
                 </div>
@@ -80,7 +80,7 @@ function ProjectTwo(){
 
 function ProjectThree(){
     return(
-        <div className="project__card hidden">
+        <div className="project__card hidden delete">
             <div className="project__card--image">
                 <img className="project__card--image-img3" src={image3} alt="" />
             </div>
