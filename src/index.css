@@ -1,6 +1,8 @@
 @import './constants.css';
 
-
+.delete{
+    display: none;
+}
 
 /*! background image */
 body{
