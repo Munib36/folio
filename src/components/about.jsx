@@ -25,7 +25,7 @@ export default function About(){
             <div className="about__hi"><h1>Hi!</h1> <img src={image} /></div>
             <h1>I'm Munib Sondak</h1>
             <h2>Let's keep it simple and A W E S O M E!</h2>
-            <h3>Self-taught Programmer & Junior Front-End Developer with a passion for bikes.</h3>
+            <h3>Self-taught Programmer & Junior Front-End Developer with a passion for electronics⚡</h3>
             <div className="about__buttons-container">
                 
                 

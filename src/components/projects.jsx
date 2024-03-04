@@ -162,13 +162,16 @@ export default function Projects(){
                 '1.1rem', '1.4rem', '.8rem', '1.7rem'
             ],
             colors = [
-            '#E23636',
-            '#F9F3EE',
-            '#E1F8DC',
-            '#B8AFE6',
-            '#AEE1CD',
-            '#5EB0E5'
+                'var(--primary-color)',
+                'var(--secondary-color)',
+                'var(--thirdrary-color)',
+                'var(--quadrary-color)',
+                '#FF6347', // Tomato
+                '#FFA07A', // Light Salmon
+                '#FFD700', // Gold
+                '#FF8C00', // Dark Orange
             ],
+            
             rand = (min, max) => 
                 Math.floor(Math.random() * (max - min + 1)) + min,
             selRand = (o) => o[rand(0, o.length -1)],
