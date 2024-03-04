@@ -31,7 +31,7 @@ function ProjectOne(){
             <div className="card__text">
                 <span>🏦Personal Project</span>
                 <h4>Tenzies Game</h4>
-                <p>Lorem ipsum dolo exceptur asperiores beatae gnam eveniet libero doloremque error commodi sunt voluptatem! Quae quasi assumenda autem debitis modi!</p>
+                <p>Tenzies made with</p>
                 <div className="card__text--tools">
                     <p>React</p>
                     <p>Web Game</p>
