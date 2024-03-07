@@ -234,7 +234,7 @@ export default function Projects(){
         stars(".project__card--image-img2")
         stars(".project__card--image-img3") 
 
-    }, [1])
+    }, [])
 
 
 
