@@ -102,7 +102,7 @@ export default function Who(){
 
 
         stars(".who__image-img");
-    }, [1])
+    }, [])
 
     
 
