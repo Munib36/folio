@@ -8,7 +8,12 @@
 body{
     overflow-x: hidden;
     background-color: black;
-    margin-bottom: 3000px;
+
+    z-index: -2;
+    position: relative;
+
+    
+
 }
 .background-image{
     background-image: url("./assets/background.jpg");
@@ -67,13 +72,37 @@ body{
   height: 1px;
   position: absolute;
   color: red;
+
+  pointer-events: none;
 }
 .star:before {
   position: absolute;
   content: '\2726';
   color: inherit;
   inset: 0;
-  //box-shadow: 0 0 1em .5em #a3c2;
-  //filter: drop-shadow(0 0 .5em white);
+  box-shadow: 0 0 1em .5em #a3c2;
+  filter: drop-shadow(0 0 .5em white);
   text-shadow: 0 0 .8em #fff5;
+}
+
+
+
+
+
+
+
+.footer{
+    position: relative;
+    /* background-color: var(--thirdrary-color); */
+    background-color: red;
+    bottom: -500px;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer h1{
+    font-size: 120px;
+    font-family: sans-serif;
 }

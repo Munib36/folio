@@ -27,17 +27,20 @@ export default function Skills() {
 
     
     return(
-        <div className='skills__container'>
-            <div className='skills__container--title-container'>
-                <h1>Tech Stack</h1>
-            </div>
-            <div className='skills__container--skills'>
-                <div className='card card1'><img src={wrench} /><p>Web Development</p></div>
-                <div className='card card2'><img src={css} /><p>CSS</p></div>
-                <div className='card card3'><img src={JS} /><p>Javascript</p></div>
-                <div className='card card4'><img src={react} /><p>React</p></div>
-                <div className='card card5'><img src={git} /><p>Git</p></div>
+        <div className='skills'>
+            <div className='skills__container'>
+                <div className='skills__container--title-container'>
+                    <h1>Tech Stack</h1>
+                </div>
+                <div className='skills__container--skills'>
+                    <div className='card card1'><img src={wrench} /><p>Web Development</p></div>
+                    <div className='card card2'><img src={css} /><p>CSS</p></div>
+                    <div className='card card3'><img src={JS} /><p>Javascript</p></div>
+                    <div className='card card4'><img src={react} /><p>React</p></div>
+                    <div className='card card5'><img src={git} /><p>Git</p></div>
+                </div>
             </div>
         </div>
+
     )
 }

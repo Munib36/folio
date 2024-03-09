@@ -1,6 +1,6 @@
 .project{
     /* background-color: green; */
-    margin-top: 300px;          /*! PLEASE EDIT THIS LATER   +++++++++++   */
+    margin-top: 300px;          
 
     position: relative;
     left: 50%;
@@ -42,6 +42,7 @@
     flex: 1;
     height: 300px;
     width: 400px;
+    overflow: hide;
 }
 .project__card--image img{
     height: 300px;
@@ -50,6 +51,18 @@
     object-fit: cover;
     object-position: top;
     border-radius: 10px;
+    transition: all 0.1s ease;
+
+
+    transform: translate(-50%, -50%);
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+.project__card--image img:hover{
+    width: calc(400px + (400px * 0.03));
+    height: calc(300px + (300px * 0.03));
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 
@@ -140,6 +153,15 @@
     }
     .project__card2{
         flex-direction: column-reverse;
+    }
+
+
+
+
+    .project__card--image img:hover{
+        width: 400px;
+        height: 300px;
+        box-shadow: none;
     }
 }
 

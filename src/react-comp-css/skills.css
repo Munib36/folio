@@ -1,9 +1,12 @@
 @import "../constants.css";
 
+.skills{
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+}
 .skills__container{
-    margin-inline: 20%;
-    margin-top: 200px;
-
+    width: 900px;
     
     display: flex;
     flex-direction: column;
@@ -90,13 +93,25 @@
 
   
 @media (max-width: 1115px) {
+    .skills__container{
+        width: 700px;
+    }
     .skills__container--skills{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
 }
   
-@media (max-width: 709px) {
+@media (max-width: 823px) {
+    .skills__container{
+        width: 80%;
+    }
+    /* .skills__container--skills{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    } */
+}
+@media (max-width: 533px) {
     .skills__container--skills{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;

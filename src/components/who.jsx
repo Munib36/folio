@@ -108,11 +108,11 @@ export default function Who(){
 
 
     return(
-        <div className="who">
+        <div className="who" id="contacts">
             <div className="who__text hidden">
                 <h3>Who I am 🗿</h3>
                 <br />
-                <p>Hello! I'm Munib Sondak, self-taught programmer and electronics hobbyist.</p>
+                <p>Hello! I'm Munib Sondak, <span className="highlight">self-taught</span> programmer and electronics hobbyist.</p>
                 <br />
                 <p>In the last few years, I taken keen interest in programming and im quite proficient. i am self taught and quite confident in my abilities to handle the many challenges that programming presents.</p>
                 <br />
