@@ -2,7 +2,8 @@
 :root{
     --triangle-size-value: calc(11vw + 15px);
 
-    --page-background-color: var(--quadrary-color)
+    --page-background-color: var(--thirdary-color);
+
 }
 
 .page{
@@ -21,7 +22,18 @@
 }
 
 
-
+.page-section-1{
+    background-color: transparent;
+}
+.page-section-2{
+    background-color: var(--quadrary-color);
+}
+.page-section-3{
+    background-color: var(--secondary-color);
+}
+.page-section-4{
+    background-color: var(--thirdary-color);
+}
 
 
 
@@ -36,9 +48,10 @@
 
     border-bottom: var(--triangle-size-value) solid var(--page-background-color);
 
-    position: inherit;
+    position: absolute;
     /* top: calc(-15vw + -14px); */
     top: calc((-1 * var(--triangle-size-value)) + 0.1vh);
+
     /* weird i know but its good, as u can see it negates it and just 1 px bc there is a weird gap  */
 }   
 
@@ -53,7 +66,7 @@
 
     border-left: 0 solid transparent;
     border-right: 50vw solid transparent;
-    border-top: var(--triangle-size-value) solid var(--page-background-color);
+    border-top: var(--triangle-size-value) solid var(--thirdary-color);
 }
 
 #bottom-triangle2{
@@ -66,7 +79,7 @@
 
     border-left: 50vw solid transparent;
     border-right: 0px solid transparent;
-    border-top: var(--triangle-size-value) solid var(--page-background-color);
+    border-top: var(--triangle-size-value) solid var(--thirdary-color);
 }
 #circle{
     position: relative;

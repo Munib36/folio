@@ -37,10 +37,22 @@ function App() {
   
   return (
     <>
-      <About />
-      <Projects />
-      <Skills />
-      <Who />
+      <div className="page-section-1">
+        <About />
+      </div>
+      <div className="spacer curve1"></div>
+      <div className="page-section-2">
+        <Projects />
+      </div>
+      <div className="spacer curve2"></div>
+      <div className="page-section-3">
+        <Skills />
+      </div>
+      
+      <div className="spacer curve3"></div>
+      <div className="page-section-4">
+        <Who />
+      </div>
     </>
   )
 }

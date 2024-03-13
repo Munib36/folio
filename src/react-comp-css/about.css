@@ -1,11 +1,12 @@
 @import "../constants.css";
 
 .about{
-    background-color: transparent;
+    background-color: var(--thirdary-color);
 
     margin-inline: 18%;
     
     text-align: left;
+    
 }
 .about__hi{
     display: flex;
@@ -46,7 +47,7 @@
     padding: 4px 8px;
     border: none;
     border-radius: 5px;
-    background-color: var(--thirdary-color);
+    background-color: var(--secondary-color);          /* ! ROUX ++++++++++++++++++++++++++++++++++++++++++++= */
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     cursor: pointer;
     color: var(--light-color);

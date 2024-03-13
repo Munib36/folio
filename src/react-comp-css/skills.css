@@ -3,7 +3,7 @@
 .skills{
     display: flex;
     justify-content: center;
-    margin-top: 300px;
+
 }
 .skills__container{
     width: 900px;

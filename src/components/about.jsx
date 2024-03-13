@@ -34,6 +34,7 @@ export default function About(){
                 <a href="https://github.com/Munib36" target="_blank"><button className="about__buttons--buttons">Github</button></a>
                 <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=business.munib@gmail.com" target="_blank"><button className="about__buttons--buttons">Mail</button></a>
             </div>
+            
         </div>
     )
 }
