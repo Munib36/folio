@@ -2,7 +2,7 @@
 :root{
     --triangle-size-value: calc(11vw + 15px);
 
-    --page-background-color: var(--thirdary-color);
+    --page-background-color: var(--quadrary-color);
 
 }
 
@@ -23,10 +23,10 @@
 
 
 .page-section-1{
-    background-color: transparent;
+    background-color: var(--quadrary-color);
 }
 .page-section-2{
-    background-color: var(--quadrary-color);
+    background-color: var(--thirdary-color);
 }
 .page-section-3{
     background-color: var(--secondary-color);
