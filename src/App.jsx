@@ -46,12 +46,13 @@ function App() {
       </div>
       <div className="spacer curve2"></div>
       <div className="page-section-3">
+        <Who />
         <Skills />
       </div>
       
       <div className="spacer curve3"></div>
       <div className="page-section-4">
-        <Who />
+        
       </div>
     </>
   )

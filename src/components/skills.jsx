@@ -30,7 +30,7 @@ export default function Skills() {
         <div className='skills'>
             <div className='skills__container'>
                 <div className='skills__container--title-container'>
-                    <h1>Tech Stack</h1>
+                    <h1>My Tech Stack</h1>
                 </div>
                 <div className='skills__container--skills'>
                     <div className='card card1'><img src={wrench} /><p>Web Development</p></div>

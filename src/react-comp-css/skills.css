@@ -15,7 +15,9 @@
     color: var(--light-color)
 }
 
-
+.skills__container--title-container h1{
+    text-align: center;
+}
 .skills__container--skills{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -26,7 +28,7 @@
     margin-top: 50px;
 }
 .skills__container--skills > div{
-    background-color: var(--thirdary-color);
+    background-color: var(--quadrary-color);
     border-radius: 10px;
     height: min-content;
 
