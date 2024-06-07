@@ -35,9 +35,11 @@
 }
 
 .who__image img{
-    border-radius: 10px;
+    border-radius: 38% 62% 44% 56% / 24% 46% 54% 76% ;
+    transition: border-radius 500ms ease-in-out;
     
 }
+
 
   
 @media (max-width: 1115px) {

@@ -103,8 +103,27 @@ export default function Who(){
 
     //     stars(".who__image-img");
     // }, [])
+    let randomPerc;
+    let percentages = [
+        "30% 70% 70% 30% / 30% 30% 70% 70% ",
+        "39% 61% 76% 24% / 66% 46% 54% 34% ",
+        "68% 32% 55% 45% / 21% 28% 72% 79% ",
+        "50% 50% 55% 45% / 82% 27% 73% 18% ",
+        "19% 81% 74% 26% / 76% 44% 56% 24% ",
+        "34% 66% 26% 74% / 56% 72% 28% 44% ",
+        "74% 26% 21% 79% / 64% 59% 41% 36% ",
+    ]    
+    function getRandomPerc(){
+        let rand = Math.floor(Math.random()*percentages.length + 1)
+        randomPerc = percentages[rand]
+    }
+    setInterval(()=>{
+        var img = document.getElementById("who__image-img");
 
-    
+        getRandomPerc();
+        img.style.borderRadius = randomPerc
+        console.log(randomPerc)
+    }, 1000)
 
 
     return(
@@ -119,7 +138,7 @@ export default function Who(){
                 <p>in addition, i have always had a hungry curiosity for electricity, electronic components fascinate me, its a mix of math, chemistry and physics which makes it diverse and fun</p>
             </div>
             <div className="who__image hidden">
-                <img className="who__image-img" src={image} alt="" />
+                <img className="who__image-img" id="who__image-img" src={image} alt="" />
             </div>
         </div>
     )
