@@ -30,8 +30,8 @@ function ProjectOne(){
             </div>
             <div className="card__text">
                 <span>🏦Personal Project</span>
-                <h4>Tenzies Game</h4>
-                <p>Fully working Tenzies game made with React.JS with a focus on hooks, counts best scores and time, clean and responsive design.</p>
+                <h4>non-profit organization</h4>
+                <p>stfu munib and fix this.</p>
                 <div className="card__text--tools">
                     <p>React</p>
                     <p>Web Game</p>
@@ -55,8 +55,8 @@ function ProjectTwo(){
         <div className="project__card project__card2 hidden">
             <div className="card__text">
                 <span>📸Personal Project</span>
-                <h4>travel journal</h4>
-                <p>My personal travel journal of places ive been in and enjoyed my time in. This website exercises React.JS API with responsive design.</p>
+                <h4>some kind of business ni-</h4>
+                <p>put a business website.</p>
                 <div className="card__text--tools">
                     <p>React</p>
                     <p>API</p>

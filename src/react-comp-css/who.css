@@ -8,7 +8,7 @@
     grid-template-rows: 1fr;
 
 
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     width: 800px;
     justify-content: center;
     align-items: center;
@@ -35,8 +35,8 @@
 }
 
 .who__image img{
-    border-radius: 38% 62% 44% 56% / 24% 46% 54% 76% ;
-    transition: border-radius 500ms ease-in-out;
+    border-radius: 15px;
+    transition: border-radius 1500ms ease-in-out;
     
 }
 

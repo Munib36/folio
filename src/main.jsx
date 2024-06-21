@@ -32,7 +32,33 @@ window.addEventListener("scroll", () => {
 function contact() {
 	window.scroll(0, window.scrollY + 100);
 }
+let blurBack = document.querySelectorAll(".blurBack");
+window.addEventListener("scroll", () => {
+	if(XWidth > 993){
+		YScroll = window.scrollY;
+	if (YScroll > 900) {
+		blurScreenBack()
+		console.log("penis")
+	}else{
+		unblurScreenBack();
+	}
+	console.log(YScroll)
+	}
+})
 
+function blurScreenBack(){
+	blurBack.forEach(element => {
+		element.style.filter = "blur(3px)"
+	});
+
+}
+function unblurScreenBack(){
+	blurBack.forEach(element => {
+		element.style.filter = "blur(0px)"
+	});
+	console.log("pee")
+
+}
 
 
 
@@ -61,7 +87,9 @@ function unblurScreen(){
 	blur.forEach(element => {
 		element.style.filter = "blur(0px)"
 	});
+
 }
+
 
 
 
@@ -69,18 +97,21 @@ function unblurScreen(){
 
 window.addEventListener("scroll", () => {
 	YScroll = window.scrollY; //* update
-
-	if (YScroll > maxPoint__scrollfunction) { 
-		nav.style.display = "none"
-		unblurScreen();
-	} else if ((YScroll < maxPoint__scrollfunction) && (XWidth > 650)) {
-		nav.style.display = "block"
-	} else {
-		nav.style.display = "block"
-		if (btn.checked) {
-			blurScreen();
+	if(XWidth < 993){
+		if (YScroll > maxPoint__scrollfunction) { 
+			nav.style.display = "none"
+			unblurScreen();
+		} else if ((YScroll < maxPoint__scrollfunction) && (XWidth > 650)) {
+			nav.style.display = "block"
+		} else {
+			nav.style.display = "block"
+			if (btn.checked) {
+				blurScreen();
+			}
 		}
 	}
+
+	
 })
 //! checks for change of width (just small bug but sure)
 

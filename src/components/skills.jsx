@@ -1,9 +1,9 @@
 import React from 'react'
 
-import wrench from "/wrench.jpeg"
-import react from "/react.jpeg"
+import html from "/html.png"
+import react from "/react.png"
 import css from "/css.png"
-import JS from "/JS.jpeg"
+import JS from "/javascript.png"
 import git from "/git.png"
 
 
@@ -29,15 +29,12 @@ export default function Skills() {
     return(
         <div className='skills'>
             <div className='skills__container'>
-                <div className='skills__container--title-container'>
-                    <h1>My Tech Stack</h1>
-                </div>
                 <div className='skills__container--skills'>
-                    <div className='card card1'><img src={wrench} /><p>Web Development</p></div>
-                    <div className='card card2'><img src={css} /><p>CSS</p></div>
-                    <div className='card card3'><img src={JS} /><p>Javascript</p></div>
-                    <div className='card card4'><img src={react} /><p>React</p></div>
-                    <div className='card card5'><img src={git} /><p>Git</p></div>
+                    <div className='card card1'><img src={html} /></div>
+                    <div className='card card2'><img src={css} /></div>
+                    <div className='card card3'><img src={JS} /></div>
+                    <div className='card card4'><img src={react} /></div>
+                    <div className='card card5'><img src={git} /></div>
                 </div>
             </div>
         </div>
