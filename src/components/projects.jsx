@@ -55,7 +55,7 @@ function ProjectTwo(){
         <div className="project__card project__card2 hidden">
             <div className="card__text">
                 <span>📸Personal Project</span>
-                <h4>some kind of business ni-</h4>
+                <h4>some kind of cool business</h4>
                 <p>put a business website.</p>
                 <div className="card__text--tools">
                     <p>React</p>
