@@ -112,9 +112,9 @@ export default function Who(){
                 <br />
                 <p>Hello! I'm Munib Sondak, <span className="highlight">self-taught</span> programmer and electronics hobbyist.</p>
                 <br />
-                <p>In the last few years, I taken keen interest in programming and im quite proficient. i am self taught and quite confident in my abilities to handle the many challenges that programming presents.</p>
+                <p>I have always had a hunger for purpose and a goal, since 2022, I have taken an interest in programming and I continue to learn how useful coding is in this modern day</p>
                 <br />
-                <p>in addition, i have always had a hungry curiosity for electricity, electronic components fascinate me, its a mix of math, chemistry and physics which makes it diverse and fun</p>
+                <p>I keep a student mindset because thats the best way to learn, I am super grateful to be born at my time because of all the free information online and not many people take advantage of it.</p>
             </div>
             <div className="who__image hidden">
                 <img className="who__image-img" id="who__image-img" src={image} alt="" />

@@ -1,0 +1,19 @@
+@import "../constants.css";
+
+.footer{
+    position: relative;
+    /* background-color: var(--thirdary-color); */
+    background: url("/foot.svg");
+    background-size: 100% 100%;
+    /* background-color: red; */
+    bottom: 00px;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer h1{
+    font-size: 120px;
+    font-family: sans-serif;
+}

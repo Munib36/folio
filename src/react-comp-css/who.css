@@ -40,7 +40,9 @@
     
 }
 
-
+.highlight{
+    color: var(--secondary-color);
+}
   
 @media (max-width: 1115px) {
     .who{

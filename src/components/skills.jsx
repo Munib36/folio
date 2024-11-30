@@ -30,11 +30,12 @@ export default function Skills() {
         <div className='skills'>
             <div className='skills__container'>
                 <div className='skills__container--skills'>
-                    <div className='card card1'><img src={html} /></div>
-                    <div className='card card2'><img src={css} /></div>
-                    <div className='card card3'><img src={JS} /></div>
-                    <div className='card card4'><img src={react} /></div>
-                    <div className='card card5'><img src={git} /></div>
+                    <a className='card card1' href='#'><img src={html} /></a>
+                    <a className='card card2' href='#'><img src={css} /></a>
+                    <a className='card card3' href='#'><img src={JS} /></a>
+                    <a className='card card4' href='#'><img src={react} /></a>
+                    <a className='card card5' href='#'><img src={git} /></a>
+
                 </div>
             </div>
         </div>

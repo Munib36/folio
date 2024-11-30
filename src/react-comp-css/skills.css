@@ -24,9 +24,16 @@
     content: '';
 
 
-    width: max-content
+    width: max-content;
+
+    /* outline: 2px red dashed; */
 }
-.skills__container--skills > div{
+.card:hover img {
+    transition: 100ms transform;
+    box-shadow: 0 0.5em 0.5em -0.4em var(--thirdary-color);
+    transform: translateY(-0.25em);
+}
+.skills__container--skills > a{
     background-color: transparent;
     border-radius: 10px;
     height: min-content;
@@ -53,7 +60,7 @@
         transform: perspective(1000px) rotateX(0deg);
     }
 }
-.skills__container--skills > div > img{
+.skills__container--skills > a > img{
     width: 40px;
     aspect-ratio: 1/1;
     margin-right: 4px;

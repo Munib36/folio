@@ -91,22 +91,6 @@ body{
 
 
 
-.footer{
-    position: relative;
-    /* background-color: var(--thirdrary-color); */
-    background-color: red;
-    bottom: -500px;
-    height: 500px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.footer h1{
-    font-size: 120px;
-    font-family: sans-serif;
-}
-
 
 
 .spacer{
