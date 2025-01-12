@@ -26,7 +26,7 @@ function ProjectOne(){
     return(
         <div className="project__card hidden">
             <div className="project__card--image">
-                <img className="project__card--image-img1" src={image1} alt="" />
+                <img className="project__card--image-img1" src={image1} alt="" draggable="false" />
             </div>
             <div className="card__text">
                 <span>🏦Personal Project</span>
@@ -72,7 +72,7 @@ function ProjectTwo(){
                 </div>
             </div>
             <div className="project__card--image">
-                <img className="project__card--image-img2" src={image2} alt="" />
+                <img className="project__card--image-img2" src={image2} alt="" draggable="false" />
             </div>
         </div>
     )
@@ -82,7 +82,7 @@ function ProjectThree(){
     return(
         <div className="project__card hidden delete">
             <div className="project__card--image">
-                <img className="project__card--image-img3" src={image3} alt="" />
+                <img className="project__card--image-img3" src={image3} alt="" draggable="false" />
             </div>
             <div className="card__text">
                 <span>🎲Personal Project</span>
